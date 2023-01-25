@@ -2,6 +2,8 @@ const input = document.querySelector(".input");
 const task_input = document.querySelector("#task-input");
 const task_list = document.querySelector(".task-list");
 
+const list_container = localStorage.getItem("list_container");
+
 input.addEventListener("submit", (e) =>
 {
     // Prevent page reload after submit
@@ -54,6 +56,10 @@ input.addEventListener("submit", (e) =>
     list_container.appendChild(recorded_task);
     list_container.appendChild(list_buttons);
     task_list.appendChild(list_container);
+
+    localStorage.setItem("list_container", list_container);
+
+    list_container = localStorage.getItem("list_container");
 
     edit_button.addEventListener("click", () =>
     {
