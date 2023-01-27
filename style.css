@@ -189,3 +189,84 @@ h2 {
   display: flex;
   gap: 1rem;
 }
+
+@media only screen and (max-width: 600px)
+{
+  body 
+  {
+    padding: 25px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .title 
+  {
+    letter-spacing: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 150%;
+  }
+
+  .button {
+    font-size: 0.6rem;
+  }
+
+  .textbox {
+    font-size: 0.6rem;
+  }
+
+  .header 
+  {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem;
+    justify-content: center;
+  }
+
+  .input 
+  {
+    display: flex;
+    flex: 1 1 0%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .input .textbox 
+  {
+    width: 90%;
+    background-color: transparent;
+    font-size: 100%;
+    color: var(--color-white);
+    transition: 0.4s;
+  }
+
+  .input .button 
+  {
+    font-size: 80%;
+  }
+
+  h2 
+  {
+  font-weight: 600;
+  font-size: 0.75rem;
+  border-bottom: 2px solid black;
+  padding: 0.5rem;
+  } 
+
+  .list-container 
+  {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  justify-content: space-between;
+  gap: 0.1rem;
+  flex: 1 1 0%;
+  }
+
+  .task-list {
+    padding: 0.5rem 1rem;
+  }
+
+}
