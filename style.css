@@ -94,9 +94,11 @@ body {
     border: none;
     outline: none;
     background: none;
+    text-decoration: none;
 }
 
 .button {
+    text-decoration: none;
     appearance: none;
     outline: none;
     background: none;
